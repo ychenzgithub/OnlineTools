@@ -11,7 +11,7 @@ This webpage provides a clean way of reading a webpage, which is similar to ever
 
 ## [SSYouTube](http://ssyoutube.com)
 **Download youtube video**  
-<img src="https://en.savefrom.net/img/android/arrow.png" width="150">  
+<img src="https://en.savefrom.net/img/android/arrow.png" width="150">
 SSYouTube is owned by savefromnet.net. In this webpage, you can download video files from youtube, facebook, dailymotion, etc. when you put ss in front of any youtube url you are actually navigating away to ssyoutube.com which then redirects you to savefromnet.net with the video url you had at the time you put ss. 
 > Usage: ```ss+youtubeurl```
 

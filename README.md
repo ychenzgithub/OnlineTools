@@ -3,7 +3,7 @@ Useful online tools for research and fun
 
 ## [Outline](https://outline.com/)
 **Read newspaper**  
-
+<img src="https://cdn-images-1.medium.com/max/1600/1*oafGshjin98K3PjtPTeSsQ.png" width="200">  
 This webpage provides a clean way of reading a webpage, which is similar to evernote, easyreader, etc. In addition to this function, Outline can be used to bypass the subscription requirement for some newspaper webpages. A more practical way to do this is to add 'outline.com' before the url, e.g., 'http://outline.com/realurl'.
 > Usage: ```outline.com/url```
 

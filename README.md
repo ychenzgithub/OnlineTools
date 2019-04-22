@@ -1,7 +1,7 @@
 # OnlineTools
 Useful online tools for research and fun
 
-Author: [Yang Chen](yang.chen@uci.edu)
+**Author**: [Yang Chen](yang.chen@uci.edu)
 
 
 

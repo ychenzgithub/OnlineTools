@@ -1,6 +1,8 @@
 # OnlineTools
 Useful online tools for research and fun
 
+Author: [Yang Chen](yang.chen@uci.edu)
+
 ## [Outline](https://outline.com/)
 **Read newspaper**  
 <img src="https://cdn-images-1.medium.com/max/1600/1*oafGshjin98K3PjtPTeSsQ.png" width="150">

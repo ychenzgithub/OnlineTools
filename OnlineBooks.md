@@ -9,3 +9,5 @@ Some online books that may be useful
 
 
 ## [Forecasting: Principles and Practice](https://otexts.org/fpp2/)  
+
+## [A Programmer's Guide to Data Mining](http://guidetodatamining.com/)

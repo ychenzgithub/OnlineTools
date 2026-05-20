@@ -1,0 +1,517 @@
+/* Modern CSS Reset & Variable Definitions */
+:root {
+    --bg-color: #0b0f19;
+    --surface-color: rgba(22, 28, 45, 0.6);
+    --surface-hover: rgba(30, 39, 62, 0.8);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.16);
+    
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    
+    /* Vibrant gradients per category */
+    --grad-tools: linear-gradient(135deg, #a78bfa 0%, #ec4899 100%);
+    --grad-webpages: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+    --grad-courses: linear-gradient(135deg, #34d399 0%, #059669 100%);
+    --grad-books: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+    --grad-all: linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%);
+    
+    --glow-tools: rgba(167, 139, 250, 0.15);
+    --glow-webpages: rgba(34, 211, 238, 0.15);
+    --glow-courses: rgba(52, 211, 153, 0.15);
+    --glow-books: rgba(251, 191, 36, 0.15);
+    
+    --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ambient glow blobs in background */
+.background-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.12;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bg-glow-1 {
+    background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
+    top: -200px;
+    left: -200px;
+}
+
+.bg-glow-2 {
+    background: radial-gradient(circle, #06b6d4 0%, transparent 70%);
+    bottom: -200px;
+    right: -200px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header Styles */
+header {
+    background: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--grad-all);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.3);
+}
+
+.brand h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #fff, #9ca3af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand .subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Search Box */
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 46px 12px 48px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.15);
+}
+
+.search-box input:focus + .search-icon {
+    color: #a78bfa;
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+    transition: color 0.2s;
+}
+
+.clear-search-btn:hover {
+    color: var(--text-primary);
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* Filter Wrapper & Tabs */
+.filter-wrapper {
+    margin-bottom: 32px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+/* Custom scrollbar for filter wrapper on mobile */
+.filter-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+.filter-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+}
+
+.filter-tab {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-tab:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+}
+
+.filter-tab.active {
+    background: var(--text-primary);
+    color: var(--bg-color);
+    border-color: var(--text-primary);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.filter-tab .badge {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-secondary);
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.filter-tab.active .badge {
+    background: rgba(0, 0, 0, 0.12);
+    color: var(--bg-color);
+}
+
+/* Resources Grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+/* Individual Card Styling */
+.card {
+    background: var(--surface-color);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transition: background 0.3s;
+}
+
+/* Apply gradient border top & shadows based on category */
+.card[data-category="Tools"]::before { background: var(--grad-tools); }
+.card[data-category="Webpages"]::before { background: var(--grad-webpages); }
+.card[data-category="Courses"]::before { background: var(--grad-courses); }
+.card[data-category="Books"]::before { background: var(--grad-books); }
+
+.card:hover {
+    background: var(--surface-hover);
+    transform: translateY(-5px);
+    border-color: var(--border-hover);
+}
+
+.card[data-category="Tools"]:hover { box-shadow: 0 15px 30px var(--glow-tools), var(--shadow-lg); }
+.card[data-category="Webpages"]:hover { box-shadow: 0 15px 30px var(--glow-webpages), var(--shadow-lg); }
+.card[data-category="Courses"]:hover { box-shadow: 0 15px 30px var(--glow-courses), var(--shadow-lg); }
+.card[data-category="Books"]:hover { box-shadow: 0 15px 30px var(--glow-books), var(--shadow-lg); }
+
+/* Card Header details */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card-favicon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-favicon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.card-favicon .fallback-icon {
+    font-size: 20px;
+}
+
+/* Category specific fallback icons colors */
+.card[data-category="Tools"] .fallback-icon { color: #a78bfa; }
+.card[data-category="Webpages"] .fallback-icon { color: #22d3ee; }
+.card[data-category="Courses"] .fallback-icon { color: #34d399; }
+.card[data-category="Books"] .fallback-icon { color: #fbbf24; }
+
+.card-meta {
+    flex: 1;
+}
+
+.card-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.category-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.card[data-category="Tools"] .category-tag { background: rgba(167, 139, 250, 0.12); color: #c084fc; }
+.card[data-category="Webpages"] .category-tag { background: rgba(34, 211, 238, 0.12); color: #22d3ee; }
+.card[data-category="Courses"] .category-tag { background: rgba(52, 211, 153, 0.12); color: #34d399; }
+.card[data-category="Books"] .category-tag { background: rgba(251, 191, 36, 0.12); color: #fcd34d; }
+
+/* Description styling */
+.card-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Action button at card footer */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.card-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.2s;
+}
+
+.card[data-category="Tools"] .card-link { color: #a78bfa; }
+.card[data-category="Webpages"] .card-link { color: #22d3ee; }
+.card[data-category="Courses"] .card-link { color: #34d399; }
+.card[data-category="Books"] .card-link { color: #fbbf24; }
+
+.card-link:hover {
+    gap: 10px;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-size: 13px;
+}
+
+.copy-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Empty State Styling */
+.empty-state {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.empty-icon {
+    font-size: 64px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.empty-state h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    max-width: 320px;
+}
+
+/* Footer styling */
+footer {
+    border-top: 1px solid var(--border-color);
+    background: rgba(11, 15, 25, 0.9);
+    padding: 32px 0;
+    margin-top: auto;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

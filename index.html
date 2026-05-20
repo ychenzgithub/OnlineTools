@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Online Resources</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow bg-glow-1"></div>
+    <div class="background-glow bg-glow-2"></div>
+    
+    <header>
+        <div class="container header-container">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <div>
+                    <h1>Online Portal</h1>
+                    <p class="subtitle">Curated Web Resources & Tools</p>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search tools, courses, books...">
+                <button id="clearSearch" class="clear-search-btn" title="Clear search">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Filter Tabs -->
+        <div class="filter-wrapper">
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-category="all">
+                    <i class="fa-solid fa-border-all"></i> All Resources <span class="badge count-all">0</span>
+                </button>
+                <button class="filter-tab" data-category="Tools">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> Tools <span class="badge count-tools">0</span>
+                </button>
+                <button class="filter-tab" data-category="Webpages">
+                    <i class="fa-solid fa-laptop-code"></i> Interactive <span class="badge count-webpages">0</span>
+                </button>
+                <button class="filter-tab" data-category="Courses">
+                    <i class="fa-solid fa-graduation-cap"></i> Courses <span class="badge count-courses">0</span>
+                </button>
+                <button class="filter-tab" data-category="Books">
+                    <i class="fa-solid fa-book-open"></i> Books <span class="badge count-books">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Resources Grid -->
+        <div class="resources-grid" id="resourcesGrid">
+            <!-- Dynamic cards will be rendered here -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">
+                <i class="fa-regular fa-folder-open"></i>
+            </div>
+            <h2>No resources found</h2>
+            <p>Try refining your search query or switching categories.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>Curated by <strong>Yang Chen</strong> &middot; Open source on GitHub</p>
+            <div class="footer-links">
+                <a href="https://github.com/ychenzgithub/OnlineTools" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub Repository
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

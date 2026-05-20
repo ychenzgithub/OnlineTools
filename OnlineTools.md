@@ -5,19 +5,19 @@ Useful online tools for research and fun
 
 
 
-## [Outline](https://outline.com/)
-**Read newspaper**  
-<img src="https://cdn-images-1.medium.com/max/1600/1*oafGshjin98K3PjtPTeSsQ.png" width="150">
-This webpage provides a clean way of reading a webpage, which is similar to evernote, easyreader, etc. In addition to this function, Outline can be used to bypass the subscription requirement for some newspaper webpages. A more practical way to do this is to add 'outline.com' before the url, e.g., 'http://outline.com/realurl'.
-> Usage: ```outline.com/url```
+## [RemovePaywall](https://www.removepaywall.com/)
+**Read newspaper and bypass paywalls**  
+<img src="https://www.removepaywall.com/apple-touch-icon.png" width="150" onerror="this.style.display='none'">
+This webpage provides a clean way of reading articles by bypassing paywalls. It searches internet archives and cached versions to serve a clean, readable copy of the page. For harder paywalls, [Archive.ph](https://archive.ph/) is a powerful alternative that takes static snapshots of pages.
+> Usage: Paste the article URL on the homepage.
   
-## [SSYouTube](http://ssyoutube.com)
-**Download youtube video**  
-<img src="https://en.savefrom.net/img/android/arrow.png" width="150">
-SSYouTube is owned by savefromnet.net. In this webpage, you can download video files from youtube, facebook, dailymotion, etc. when you put ss in front of any youtube url you are actually navigating away to ssyoutube.com which then redirects you to savefromnet.net with the video url you had at the time you put ss. 
-> Usage: ```ss+youtubeurl```
+## [Cobalt](https://cobalt.tools)
+**Download video and audio**  
+<img src="https://raw.githubusercontent.com/wukko/cobalt/current/web/src/assets/logo.png" width="150" onerror="this.style.display='none'">
+Cobalt is an open-source, privacy-respecting, and completely ad-free media downloader. It allows you to download video and audio files from YouTube, TikTok, Instagram, Twitter/X, and more without any pop-up ads, trackers, or malware.
+> Usage: Paste the media URL on the homepage.
   
-## [Sci-Hub](https://sci-hub.tw/)
+## [Sci-Hub](https://sci-hub.se/)
 **Download research papers**  
 <img src="https://s3.amazonaws.com/ArchiveImages/LJ/2016/08/scihub-300x300.png" width="150"> 
-Sci-Hub is a website that provides free access to millions of research papers and books by bypassing publishers' paywalls. Sci-Hub obtains paywalled publications by authenticating with universities' proxy servers, which provide access to publishers' online libraries. Note Sci-hub domains are often blocked by goverments due to legal suits against them. So try to use other country domain names if one does not work, such as [.tw](https://sci-hub.tw),[.hk](https://sci-hub.hk),[.cn](https://sci-hub.cn),[.la](https://sci-hub.la),[.mn](https://sci-hub.mn),[.name](https://sci-hub.name),[.tv](https://sci-hub.tv),[.nu](https://sci-hub.nu),[.wang](https://sci-hub.wang),[80.82.77.83](https://80.82.77.83),[80.82.77.84](https://80.82.77.84), etc. A updated list can be found [here](https://www.reddit.com/r/scihub/comments/7ioo0m/working_scihub_domains_10122017/).
+Sci-Hub is a website that provides free access to millions of research papers and books by bypassing publishers' paywalls. Note Sci-hub domains are often blocked by governments due to legal suits against them. So try to use other domain names if one does not work, such as [.se](https://sci-hub.se), [.st](https://sci-hub.st), [.ru](https://sci-hub.ru), [.al](https://sci-hub.al), etc. An updated list can be found on Reddit.

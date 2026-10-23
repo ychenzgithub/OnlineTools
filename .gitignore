@@ -1,4 +1,9 @@
 .antigravitycli/
+.DS_Store
 results.txt
 fetched_meta.txt
 build_portal.py
+OnlineTools.md
+InteractiveWebpages.md
+OnlineCourses.md
+OnlineBooks.md

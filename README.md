@@ -1,14 +1,14 @@
-# Online webpages
+# Curated Web Portal · 精选在线工具与资源导航
 
+[![Website](https://img.shields.io/badge/Website-ychenzgithub.github.io%2FOnlineTools-4f46e5?style=for-the-badge)](https://ychenzgithub.github.io/OnlineTools/)
 
-## [Online tools](https://github.com/ychenzgithub/OnlineTools/blob/master/OnlineTools.md)
-Useful online tools for research and fun
+**🌐 Visit the interactive portal: <https://ychenzgithub.github.io/OnlineTools/>**
 
-## [Interactive webpages](https://github.com/ychenzgithub/OnlineTools/blob/master/InteractiveWebpages.md)
-Fun or informative webpages with interactive operations
+An interactive, searchable collection of useful online tools, interactive educational webpages, online courses, and open-access books for research, learning, and fun.
 
-## [Online courses](https://github.com/ychenzgithub/OnlineTools/blob/master/OnlineCourses.md)
-Useful online courses and tutorials
+## Categories
 
-## [Online books](https://github.com/ychenzgithub/OnlineTools/blob/master/OnlineBooks.md)
-Useful online books
+- **🛠️ Online Tools**: Useful online utilities for research, visualization, productivity, and fun
+- **✨ Interactive Webpages**: Informative webpages and visual explainers with interactive explorations
+- **🎓 Online Courses**: Curated tutorials and university courses in mathematics, computer science, and data science
+- **📚 Online Books**: Open-access textbooks and technical references

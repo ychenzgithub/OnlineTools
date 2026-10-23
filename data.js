@@ -22,7 +22,7 @@ const RESOURCES_DATA = [
     "description": "Download research papers  \n \nSci-Hub is a website that provides free access to millions of research papers and books by bypassing publishers' paywalls. Note Sci-hub domains are often blocked by governments due to legal suits against them. So try to use other domain names if one does not work, such as .se, .st, .ru, .al, etc. An updated list can be found on Reddit."
   },
   {
-    "title": "Sinkmoji",
+    "title": "Stinkmoji",
     "url": "https://stinkmoji.cool/",
     "domain": "stinkmoji.cool",
     "category": "Webpages",
@@ -99,11 +99,11 @@ const RESOURCES_DATA = [
     "description": "Nicholas Rougeux's beautiful interactive recreation of the original 1821 color guidebook with cross references, photographic examples, and modern web styling."
   },
   {
-    "title": "Forecasting: Principles and Practice (2nd ed.)",
-    "url": "https://otexts.com/fpp2/",
+    "title": "Forecasting: Principles and Practice (3rd ed.)",
+    "url": "https://otexts.com/fpp3/",
     "domain": "otexts.com",
     "category": "Books",
-    "description": "or (3rd ed.)  \nAn online textbook providing a comprehensive introduction to forecasting methods, including ARIMA models, exponential smoothing, and state space models."
+    "description": "An online textbook by Rob J Hyndman and George Athanasopoulos providing a comprehensive introduction to forecasting methods, including ARIMA models, exponential smoothing, and state space models (2nd ed. also available at otexts.com/fpp2/)."
   },
   {
     "title": "A Programmer's Guide to Data Mining",

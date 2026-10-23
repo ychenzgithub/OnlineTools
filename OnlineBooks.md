@@ -8,8 +8,8 @@ A comprehensive guide by Claus O. Wilke on making data visualizations that accur
 ## [Werner’s Nomenclature of Colours](https://www.c82.net/werner/)  
 Nicholas Rougeux's beautiful interactive recreation of the original 1821 color guidebook with cross references, photographic examples, and modern web styling.
 
-## [Forecasting: Principles and Practice (2nd ed.)](https://otexts.com/fpp2/) or [(3rd ed.)](https://otexts.com/fpp3/)  
-An online textbook providing a comprehensive introduction to forecasting methods, including ARIMA models, exponential smoothing, and state space models.
+## [Forecasting: Principles and Practice (3rd ed.)](https://otexts.com/fpp3/)  
+An online textbook by Rob J Hyndman and George Athanasopoulos providing a comprehensive introduction to forecasting methods, including ARIMA models, exponential smoothing, and state space models (2nd ed. also available at otexts.com/fpp2/).
 
 ## [A Programmer's Guide to Data Mining](http://guidetodatamining.com/)  
 A guide to data mining, machine learning, and recommendation engines, designed in an easy-to-read, conversational textbook format.

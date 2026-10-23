@@ -2,7 +2,7 @@
 Fun and useful interactive webpages
 
 
-## [Sinkmoji](https://stinkmoji.cool/)  
+## [Stinkmoji](https://stinkmoji.cool/)  
 An adorable face recognition experience combining face recognition and 3D modeling to celebrate Internet pop culture.
 
 ## [Semiconductor](https://semiconductor.withgoogle.com/)  
